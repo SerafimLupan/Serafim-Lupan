@@ -63,3 +63,50 @@ function updateAge() {
 
 // update age when the window is loading
 window.onload = updateAge;
+
+// Validare formular și resetare pagină
+function validateForm() {
+    let valid = true;
+
+    // Validare nume
+    let name = document.getElementById('name').value;
+    let nameError = document.getElementById('nameError');
+    if (!/^[A-Z][a-z]*$/.test(name)) {
+        nameError.textContent = "The name must start with a capital letter.";
+        valid = false;
+    } else {
+        nameError.textContent = "";
+    }
+
+    // Validare e-mail
+    let email = document.getElementById('email').value;
+    let emailError = document.getElementById('emailError');
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        emailError.textContent = "The email address is invalid.";
+        valid = false;
+    } else {
+        emailError.textContent = "";
+    }
+
+    // Validare mesaj
+    let message = document.getElementById('message').value;
+    let messageError = document.getElementById('messageError');
+    if (message.length > 500) {
+        messageError.textContent = "The message must not exceed 500 characters.";
+        valid = false;
+    } else if (!/^[A-Z].*/.test(message)) {
+        messageError.textContent = "The message must start with an uppercase letter.";
+        valid = false;
+    } else {
+        messageError.textContent = "";
+    }
+
+    // Dacă toate datele sunt valide, se resetează pagina
+    if (valid) {
+        document.getElementById('contactForm').reset();
+        alert("The message has been sent!");
+    }
+
+    return false; // Previnde trimiterea formularului pentru a permite verificarea și resetarea
+}
