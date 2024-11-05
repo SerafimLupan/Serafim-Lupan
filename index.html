@@ -95,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container-skill">
                 <div class="skill-box">
                     <span class="title">HTML</span>
         
@@ -193,25 +193,26 @@
         <section class="nth-first-section" id="achievments">
             <h2>Achievments</h2>
 
-            <div class="about-card">
-                <div class="row">
-                    <div class="col-20">
-                        <img src="images/badge.png" style="height: 150px; width: 100%;padding: 10px; display: block; margin-left: auto; margin-right: auto;">
-                    </div>
-                    <div class="col-80">
-                        <p class="centered" style="font-size: 26px; padding:0 10px;">05. 2024</p>
-                        <p style="font-size: 26px; padding:0 10px;">
-                            Prize winner at the Informatics Olympiad at County level
-                        </p>
-                        <p style="font-size: 20px; padding:0 10px;">
-                            • III place at the Informatics Olympiad edition (2024) at Country level
-                        </p>
-                    </div>
+        <div class="about-card">
+            <div class="row">
+                <div class="col-20">
+                    <img src="images/badge.png" style="height: 150px; width: 100%;padding: 10px; display: block; margin-left: auto; margin-right: auto;">
+                </div>
+                <div class="col-80">
+                    <p class="centered" style="font-size: 26px; padding:0 10px;">05. 2024</p>
+                    <p style="font-size: 26px; padding:0 10px;">
+                        Prize winner at the Informatics Olympiad at County level
+                    </p>
+                    <p style="font-size: 20px; padding:0 10px;">
+                        • III place at the Informatics Olympiad edition (2024) at Country level
+                    </p>
                 </div>
             </div>
+        </div>
 
-            <br/><br/>
+        <br/><br/>
 
+            
             <div class="about-card">
                 <div class="row">
                     <div class="col-20">
@@ -247,12 +248,37 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
         <section class="nth-first-section" id="contact-me">
             <h2>Contact me</h2>
-            <img src="images/construction.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+
+            <div class="contact_me">
+                <div class="container-contact">
+                    <form class="form" id="contactForm" onsubmit="return validateForm()">
+                        <div class="input">
+                            <input required="" autocomplete="off" type="text" id="name" name="name">
+                            <label for="name">Name</label>
+                            <span class="error" id="nameError"></span>
+                        </div>
+                
+                        <div class="input">
+                            <input required="" autocomplete="off" name="email" type="email" id="email">
+                            <label for="email">E-mail</label>
+                            <span class="error" id="emailError"></span>
+                        </div>
+                
+                        <div class="input">
+                            <textarea required="" id="message"></textarea>
+                            <label for="message">Message</label>
+                            <span class="error" id="messageError"></span>
+                        </div>
+                        <button type="submit">Send →</button>
+                    </form>
+                </div>
+            </div>
+
         </section>
 
     </main>
@@ -262,12 +288,12 @@
         <div class="footerContainer">
             
             <div class="socialIcons">
-                <a href="https://www.facebook.com/serafim.lupan.9" target="_blank"><img src="images/facebook.png"></a>
-                <a href="https://www.instagram.com/serafim.web/?hl=ro" target="_blank"><img src="images/instagram.png"></a>
-                <a href="https://x.com/LupanSerafim" target="_blank"><img src="images/twitter.png"></a>
-                <a href="https://www.youtube.com/@S3raF1m_L" target="_blank"><img src="images/youtube.png"></a>
-                <a href="https://github.com/SerafimLupan" target="_blank"><img src="images/github.png"></a>
-                <a href="https://www.linkedin.com/in/serafimlupan/" target="_blank"><img src="images/linkedin.png"></a>
+                <a href="https://www.facebook.com/serafim.lupan.9"><img src="images/facebook.png"></a>
+                <a href="https://www.instagram.com/serafim.web/?hl=ro"><img src="images/instagram.png"></a>
+                <a href="https://x.com/LupanSerafim"><img src="images/twitter.png"></a>
+                <a href="https://www.youtube.com/@S3raF1m_L"><img src="images/youtube.png"></a>
+                <a href="https://github.com/SerafimLupan"><img src="images/github.png"></a>
+                <a href="https://www.linkedin.com/in/serafimlupan/"><img src="images/linkedin.png"></a>
             </div>
 
             <div class="footerNav">
