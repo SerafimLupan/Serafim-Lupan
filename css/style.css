@@ -116,7 +116,10 @@ p {
 }
 
 img {
-    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
 }
 
 section {
@@ -159,6 +162,9 @@ div {
 
 .row{
     overflow: auto;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 [class^="col-"] {
@@ -250,13 +256,18 @@ nav a.logo-name {
     font-family: "Press Start 2P";
 }
 
-nav .sidebar a:hover {
-    font-size: 40px;
-    background: rgba(188,188,188,0.4);
+.sidebar a:hover {
+    background: rgba(0, 0, 0, 0.4);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    border: 1px solid rgba(188,188,188,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transform: scale(1.1, 1.1);
 }
+
+.sidebar a:hover > .sidebar a:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+} 
 
 nav li:first-child {
     margin-right: auto;
@@ -271,7 +282,7 @@ nav li:first-child {
     height: 100%;
     width: 450px;
 
-    padding-top: 10%;
+    padding-top: 15%;
 
     z-index: 999;
     
@@ -280,7 +291,7 @@ nav li:first-child {
     
     display: flex; 
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
 
     background: rgba(0,0,0,0.15);
@@ -449,7 +460,7 @@ nav li:last-child {
 
 .about-card {
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-    padding: 15px 5%;
+    padding: 15px 2%;
     background: #272727;
     border-radius: 7px;
 }
@@ -538,7 +549,7 @@ nav li:last-child {
 }
 
 .skill-per.javascript {
-    width: 77%;
+    width: 49%;
     animation-delay: 0.3s;
 }
 
@@ -548,7 +559,7 @@ nav li:last-child {
 }
 
 .skill-per.python {
-    width: 55%;
+    width: 36%;
     animation-delay: 0.5s;
 }
 
@@ -819,7 +830,7 @@ footer{
 /*-- Hover affect on social media icon -- */
 
 .socialIcons a:hover{
-    background-color: #111;
+    transform: translateY(-10px);
     transition: 0.5s;
 }
 
@@ -845,7 +856,6 @@ footer{
     font-size: 1.3em;
     opacity: 0.7;
     transition: 0.5s;
-
 }
 
 .footerNav ul li a:hover{
@@ -878,12 +888,18 @@ footer{
 
 
 @media (max-width: 1024px) {
-
+    .nth-first-section {
+        padding: 80px 12% 0px 12%;
+    }
 }
 
 @media (max-width: 834px) {
     main {
         max-width: 850px;
+    }
+
+    .nth-first-section {
+        padding: 80px 10% 0px 10%;
     }
 }
 
@@ -891,9 +907,17 @@ footer{
     .sidebar {
         width: 100%;
     }
+
+    .nth-first-section {
+        padding: 80px 5% 0px 5%;
+    }
 }
 
 @media (max-width: 700px) {
+    .about-card div.col-50 {
+        width: 100%;
+        height: auto;
+    }
 
     /*-- Footer --*/
 
@@ -904,18 +928,31 @@ footer{
     .footerNav ul li{
         width:100%;
         text-align: center;
-        margin: 10px;
+        margin: 2px;
     }
     .socialIcons a{
         padding: 8px;
         margin: 4px;
     }
 
+    .row {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .info-about {
+        padding-top: 20px;
+    }
+
     /*-- Footer finish --*/
 }
 
 @media (max-width: 600px) {
-
+    .p-card-title {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 480px) {
