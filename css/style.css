@@ -78,6 +78,21 @@ header{
 
 /* --- Intro finish code --- */
 
+/*--- Scroll animation ---*/
+
+.hidden {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1.5s ease;
+}
+
+/*--- Scroll animation finish ---*/
+
 a {
     text-decoration: none;
 
@@ -691,7 +706,7 @@ nav li:last-child {
     text-align: center;
 }
 
-.form {
+.contactForm {
     display: flex;
     flex-direction: column;
 }
@@ -746,7 +761,7 @@ nav li:last-child {
     border-color: rgb(37, 211, 51);
 }
 
-.form button {
+.contactForm .button-contact-me {
     color: #e8e8e8;
     font-size: 15px;
     align-self: flex-start;
@@ -760,7 +775,7 @@ nav li:last-child {
     overflow: hidden;
 }
 
-.form button:before {
+.contactForm .button-contact-me:before {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -772,16 +787,14 @@ nav li:last-child {
     transition: opacity 0.3s ease-in-out;
 }
 
-.form button:hover:before {
+.contactForm .button-contact-me:hover:before {
     opacity: 0.2;
 }
 
-.form button:hover {
+.contactForm .button-contact-me:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
-/*-- Contact me Finish --*/
 
 .error {
     color: red;
@@ -789,6 +802,9 @@ nav li:last-child {
     display: block;
     margin-top: 5px;
 }
+
+/*-- Contact me Finish --*/
+
 
 /*-- Footer --*/
 
