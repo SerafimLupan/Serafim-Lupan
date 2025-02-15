@@ -102,12 +102,20 @@ function validateForm() {
         messageError.textContent = "";
     }
 
-    // Dacă toate datele sunt valide, se resetează pagina
-    if (valid) {
-        document.getElementById('contactForm').reset();
-        alert("The message has been sent!");
-    }
-
-    return false; // Previnde trimiterea formularului pentru a permite verificarea și resetarea
+    return valid;
 }
-
+
+// Validare formular și resetare pagină 
+var form = document.getElementById('contactForm');
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    if (validateForm()) {
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(document.getElementById("contactForm")),
+        }).then(() => {
+            alert("Thank you for your message!");
+            form.reset();
+        });
+    }
+});
