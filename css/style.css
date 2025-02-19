@@ -971,6 +971,8 @@ footer{
     }
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 430px) {
+    span.logo{
+        font-size: 72px;
+    }
 }
