@@ -148,7 +148,7 @@ section h2, section h1 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #fff;
 }
 
@@ -475,7 +475,7 @@ nav li:last-child {
 
 .about-card {
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-    padding: 15px 2%;
+    padding: 25px 2%;
     background: #272727;
     border-radius: 7px;
 }
