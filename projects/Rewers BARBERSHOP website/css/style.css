@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Kaushan+Script&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth !important;
+}
+
+/* --- Intro --- */
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+
+/* Splash Screen-ul */
+
+.intro {
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+/* --- Intro finish code --- */
+
+body,html {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Roboto;
+
+    text-decoration: none;
+}
+
+header {
+    background: #00000000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 10%;
+
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 3;
+}
+
+a {
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 24px;
+    font-family: Roboto;
+    color: #000;
+
+    padding: 5px 25px 10px 25px;
+    margin: 10px 15px 10px;
+}
+
+section {
+    background: #242524;
+    
+    width: 100%;
+    height: 100vh;
+
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+.row{
+    overflow: auto;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+}
+
+.card {
+    margin: 10px 15px;
+    padding: 5px 15px;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+.float-left {
+    display: block;
+
+    float: left;
+}
+
+.float-right {
+    display: block;
+
+    float: right;
+}
+
+
+#site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px; 
+    transition: transform 0.5s ease; 
+    transform: translateY(0);
+}
+
+.header-hidden {
+    transform: translateY(-100%);
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: 150vh;
+    width: 350px;
+
+    z-index: 999;
+
+    background: rgba(0,0,0,0.35);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(0,0,0,0.175);
+
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    transition: all 0.4s;
+}
+
+#sidebar svg:first-child {
+    margin: 0 0 0 280px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+svg path {
+    fill: azure;
+}
+
+.menu-button {
+    display: none;
+}
+
+li, a, button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    color: azure;
+    text-decoration: none;
+}
+
+.logo-imagine {
+    position: relative;
+    max-width: 350px;
+    cursor: pointer;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav li a {
+    transition: all 2s ease 0s;
+}
+
+nav li a:hover {
+    color: darkgray;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #ffffff00;
+    border-color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: all 2s ease 0s;
+}
+
+button:hover {
+    background-color: #00000070;
+}
+
+/* --- --- Stilurile secțiunilor --- --- */
+
+.top-section-index {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url(../images/background1.jpg);
+}
+
+
+.top-section-program {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url(../images/background2.jpg);
+}
+
+.section-descriere {
+
+}
+
+.section-price-service {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url(../images/background3.jpg);
+}
+
+.section-price-service .col-50:nth-child(2) {
+    color: azure;
+
+    height: 100vh;
+
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: -10.5px 0 32px 15px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -10.5px 0 32px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: -10.5px 0 32px 15px rgba(0, 0, 0, 0.35);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.section-price-service .col-50:nth-child(2) .position {
+    position: absolute;
+
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div .bg-color {
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.price__list {
+    padding: 30% 18% 10% 18%;
+}
+
+.price__list ul li span {
+    margin: 13px;
+    font-family: Mukta;
+    font-size: 32px;
+}
+
+.section-contacts h1 {
+    padding-top: 30px;
+
+    color: azure;
+}
+
+.section-contacts .col-50 {
+    height: 50vh;
+}
+
+.section-contacts ul.position {
+    position: absolute;
+
+    top: 430%;
+    left: 25%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.section-contacts ul li {
+    margin: 15px 0;
+}
+
+.section-contacts ul li span a {
+    font-size: 32px;
+}
+
+.section-contacts ul li span a:hover {
+    color: #cdc609;
+    text-decoration: underline;
+}
+
+.section-contacts ul li span img {
+    height: 32px;
+    width: 32px;
+}
+
+.section-contacts .col-50 img.img-contacte {
+    height: 100%;
+    width: 100%;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+}
+
+.section-contacts iframe {
+    margin-top: 20px;
+
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 3px solid #212631;
+    width: 100%;
+    height: 40vh;
+    padding: 10px 100px;
+}
+
+/* --- --- Stilurile secțiunilor finish --- --- */
+
+/* --- --- Stilurile info ale secțiunilor --- --- */
+
+.section-info-index {
+    margin-top: 80px;
+    margin: 80px 50px 5px;
+    position: absolute;
+    
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+    font-family: Kaushan Script;
+    font-size: 48px;
+    
+    background: linear-gradient(
+        to right, rgb(253, 232, 0), #fff 35%, #935600 
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 75%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 70%;}
+}
+
+/* --- --- Stilurile info ale secțiunilor finish --- --- */
+
+.card-program {
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background: rgba(0,0,0,0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(0,0,0,0.1);
+   
+    min-height: 50%;
+    min-width: 25%;
+    padding: 20px 0 20px 25px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-program {
+    color: #fff;
+}
+
+.formular input, select {
+    height: 40px;
+}
+
+input, select:focus {
+    color: #ffffff;
+}
+
+input, select {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: auto;
+
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background: rgba(0,0,0,0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* --- --- Style de la submit --- ---*/
+
+#submit {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    height: 50px;
+    width: 90%;
+
+    font-size: 26px;
+}
+
+form #submit {
+    position: relative;
+    display: inline-block;
+
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    overflow: hidden;
+
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+  
+#submit:hover {
+    background: #03f40f;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #00dc0b,
+                0 0 25px #00dc0b,
+                0 0 50px #00dc0b,
+                0 0 100px #00dc0b;
+}
+  
+#submit {
+    position: absolute;
+    display: block;
+}
+  
+@keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+}
+  
+#submit:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00dc0b);
+    animation: btn-anim1 2s linear infinite;
+}
+
+/* --- --- Style de la submit  finish--- ---*/
+
+/* --- input style --- */
+
+.group {
+    position: relative;
+}
+ 
+.input-text {
+    font-size: 16px;
+    display: block;
+
+    height: auto;
+    width: 90%;
+    
+    border: none;
+    border-bottom: 1px solid #ababab;
+    background: transparent;
+}
+ 
+.input-text:focus {
+    outline: none;
+}
+ 
+label {
+    color: #999;
+
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+ 
+.input-text:focus ~ label, .input-text:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: azure;
+}
+ 
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: auto;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+ 
+.input-text:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+ 
+@keyframes inputHighlighter {
+    from {
+        background: azure;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+/* --- finish --- */
+
+.card-program p{
+    color: azure;
+    font-size: 18px;
+}
+
+footer {
+
+    min-height: 70px;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 10px;
+
+    background-color: #000;
+    -webkit-box-shadow: 4.5px -5px 23.5px 32px #000000;
+    -moz-box-shadow: 4.5px -5px 23.5px 32px #000000;
+    box-shadow: 4.5px -5px 23.5px 32px #000000;
+}
+
+footer h3 {
+    margin: 5px 10px;
+}
+
+@media (max-width: 1590px) {
+    .price__list ul li span {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .card-program {
+        min-width: 30%;
+    }
+}
+
+@media (max-width: 1410px) {
+    .price__list {
+        padding: 30% 10% 10%;
+    }
+
+    .price__list ul li span {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .card-program {
+        min-width: 35%;
+    }
+}
+
+@media (max-width: 1274px) {
+    .price__list ul li span {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1225px) {
+    .hidenOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    li, a {
+        font-size: 24px;
+    }
+
+    .card-program {
+        min-width: 40%;
+    }
+
+    .section-contacts iframe {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .price__list ul {
+        position: absolute;
+
+        top: 30%;
+    }
+
+    .price__list {
+        padding: 30% 5% 10% ;
+    }
+
+    .price__list ul li span {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 960px) {
+    .section-price-service .col-50:nth-child(2) {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .price__list ul {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 904px) {
+    .price__list ul li span {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 880px) {
+    .card-program {
+        min-width: 45%;
+    }
+}
+
+@media (max-width: 845px) {
+    .price__list ul {
+        width: 80%;
+        height: 45%;
+    }
+}
+
+@media (max-width: 780px) {
+    .logo-imagine {
+        max-width: 250px;
+    }
+
+    .card-program {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .card-program {
+        min-width: 55%;
+    }
+}
+
+@media (max-width: 550px) {
+    #sidebar {
+        width: 100%;
+    }
+
+    #sidebar svg:first-child {
+        margin: 0 0 0 480px;
+    }
+
+    li, a {
+        font-size: 28px;
+    }
+
+    .card-program {
+        min-width: 60%;
+    }
+}
+
+@media (max-width: 520px) {
+    #sidebar svg:first-child {
+        margin: 0 0 0 450px;
+    }
+
+    .card-program {
+        min-width: 65%;
+    }
+}
+
+@media (max-width: 490px) {
+    #sidebar svg:first-child {
+        margin: 0 0 0 420px;
+    }
+
+    .card-program {
+        min-width: 70%;
+    }
+}
+
+@media (max-width: 460px) {
+    #sidebar svg:first-child {
+        margin: 0 0 0 390px;
+    }
+
+    .card-program {
+        min-width: 75%;
+    }
+}
+
+@media (max-width: 430px) {
+    #sidebar svg:first-child {
+        margin: 0 0 0 360px;
+    }
+
+    .card-program {
+        min-width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    #sidebar svg:first-child {
+        margin: 0 0 0 330px;
+    }
+
+    .card-program {
+        min-width: 85%;
+    }
+}
+
+@media (max-width: 370px) {
+    #sidebar svg:first-child {
+        margin: 0 0 0 300px;
+    }
+
+    .card-program {
+        min-width: 90%;
+    }
+}
+
+@media (max-width: 340px) {
+    #sidebar svg:first-child {
+        margin: 0 0 0 270px;
+    }
+
+    .logo-imagine {
+        max-width: 230px;
+    }
+}

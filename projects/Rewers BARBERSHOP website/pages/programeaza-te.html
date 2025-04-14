@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="web icon" type="png" href="../images/logo.png">
+
+    <title>Programează-te</title>
+</head>
+<body>
+
+    <header id="site-header">
+
+        <a href="../index.html"><img class="logo-imagine" src="../images/logo1.png"></a>
+ 
+        <nav>
+
+            <ul id="sidebar">
+                <li onclick=hidenSidebar()>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#descriere">Descriere</a></li>
+                <li><a href="../index.html#price-list">Price list</a></li>
+                <li><a href="../index.html#echipa">Echipa</a></li>
+                <li><a href="../index.html#contacte">Contacte</a></li>
+                <li><a href="../pages/programeaza-te.html">Programează-te</a></li>
+                
+            </ul>
+            
+            <ul>
+                <li class="hidenOnMobile"><a href="../index.html">Home</a></li>
+                <li class="hidenOnMobile"><a href="../index.html#descriere">Descriere</a></li>
+                <li class="hidenOnMobile"><a href="../index.html#price-list">Price list</a></li>
+                <li class="hidenOnMobile"><a href="../index.html#echipa">Echipa</a></li>
+                <li class="hidenOnMobile"><a href="../index.html#contacte">Contacte</a></li>
+                <li class="menu-button" onclick=showSidebar()>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+
+        <a class="hidenOnMobile" href="../pages/programeaza-te.html" class="cla"><button>Programează-te</button></a>
+    
+    </header>
+
+    <main>
+
+        <section class="top-section-program">
+
+            <div class="row">
+
+                <div class="col-50">
+    
+                    <div class="card-program">
+        
+                        <form id="formular" class="formular" method="post" action="https://sheetdb.io/api/v1/zl8yhf5zcn0te">
+        
+                            <div class="group">
+                                <input class="input-text" type="text" id="pronumele" name="data[pronumele]" pattern="[A-Z][a-z]{2,19}" title="Introduce proumele cu prima literă majusculă, exemplu: Mihai, apoi între 2 și 19 litere minuscule" required type="text" class="input">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label for="pronumele">Proumele</label>
+                            </div>
+
+                            <br/><br/>
+
+                            <div class="group">
+                                <input class="input-text" type="tel" id="telefon" name="data[telefon]" pattern="[+,0-9]{12}" title="Număr de telefon format din 12 caractere și cu +373 la început!" required type="text" class="input">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label for="telefon">Telefon</label>
+                            </div>
+        
+                            <br/><br/>
+
+                            <select id="barberul" name="data[barber]" required>
+                                <option>Radu (Pro Barber)</option>                     
+                                <option>Marina (Barber)</option>               
+                            </select>
+
+                            <br/><br/>
+
+                            <input type="date" name="data[data-luna-anul]" id="data-luna-anul" required>
+                            <label for="data-luna-anul"></label>
+
+                            <br/><br/>
+
+                            <input type="time" name="data[timp]" id="timp" min="08:00" max="22:00" required>
+                            <label for="timp"></label>
+
+                            <input id="submit" type="submit" value="Trimite">
+
+                        </form>
+
+                    </div>
+    
+                </div>
+
+            </div>
+    
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h3>©️ Rewers 2019</h3>
+
+        <h3>©️ Serafim Lupan Căușeni 2023-2024</h3>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
