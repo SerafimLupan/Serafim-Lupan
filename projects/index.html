@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="web icon" type="png" href="images/logo.png">
+
+    <title>Rewers BRABERSHOP</title>
+</head>
+<body>
+
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">Barber</span><span class="logo">Shop</span><span class="logo">Rewers</span>
+        </h1>
+
+        <audio src=""></audio>
+
+    </div>
+
+    <header id="site-header">
+
+        <a href="index.html"><img class="logo-imagine" src="images/logo1.png"></a>
+ 
+        <nav>
+
+            <ul id="sidebar">
+                <li onclick=hidenSidebar()>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#descriere">Descriere</a></li>
+                <li><a href="#price-list">Price list</a></li>
+                <li><a href="#echipa">Echipa</a></li>
+                <li><a href="#contacte">Contacte</a></li>
+                <li><a href="pages/programeaza-te.html">Programează-te</a></li>
+            </ul>
+            
+            <ul>
+                <li class="hidenOnMobile"><a href="index.html">Home</a></li>
+                <li class="hidenOnMobile"><a href="#descriere">Descriere</a></li>
+                <li class="hidenOnMobile"><a href="#price-list">Price list</a></li>
+                <li class="hidenOnMobile"><a href="#echipa">Echipa</a></li>
+                <li class="hidenOnMobile"><a href="#contacte">Contacte</a></li>
+                <li class="menu-button" onclick=showSidebar()>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+
+        <a class="hidenOnMobile" href="pages/programeaza-te.html" class="cla"><button>Programează-te</button></a>
+    
+    </header>
+
+    <main>
+
+        <section class="top-section-index">
+
+            <div class="section-info-index">
+                Barbershop-ul unde vrei sa revii.
+            </div>
+
+        </section>
+
+        <section class="section-descriere" id="descriere">
+
+            <h1 class="centered">Descriere</h1>
+
+        </section>
+
+        <section class="section-price-service" id="price-list">
+
+            <div class="row">
+
+                <div class="col-50"> 
+                    <!-- Nimic, aer,  dysplay: none; 😂 -->
+                </div>
+
+                <div class="col-50">
+
+                    <div class="card">
+                        <h1 class="position">
+                            <div class="bg-color">Price list</div>
+                        </h1>
+    
+                        <br/><br/>
+    
+                        <div class="price__list">
+    
+                            <ul type="none">
+    
+                                <li>
+                                    <span class="float-left">Aranjarea barbei</span><span class="float-right">100-150lei</span>
+                                </li>
+    
+                                <br/><br/>
+                                
+                                <li>
+                                    <span class="float-left">Tuns bărbați</span><span class="float-right">150-200lei</span>
+                                </li>
+    
+                                <br/><br/>
+                                
+                                <li>
+                                    <span class="float-left">Complex: Tuns și barbă</span><span class="float-right">250-300lei</span>
+                                </li>
+                            
+                            </ul>
+                       
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section-echipa" id="echipa">
+
+            <h1 class="centered">Echipa noastră!</h1>
+
+        </section>
+
+        <section class="section-contacts" id="contacte">
+
+            <h1 class="centered">Unde ne găsiți?</h1>
+
+            <div class="col-50">
+
+                <ul type="none" class="position">
+                    
+                    <li>
+                        <span><a href="tel:+37376602001"><img src="images/phone-call.png" width="32" height="32"> 076602001</a></span>
+                    </li>
+                    
+                    <li>
+                        <span><a href="https://www.instagram.com/rewers_barbershop/?hl=ro" target="_blank"><img src="images/instagram.png" width="32" height="32"> @rewers_barbershop</a></span>
+                    </li>
+                    
+                    <li>
+                        <span><a href="https://maps.app.goo.gl/gCY9k3W1LDv8j4M57" target="_blank"><img src="images/map.png" width="32" height="32"> Or. Căușeni, str. Păcii 27/1</a></span>
+                    </li>
+                
+                </ul>
+
+            </div>
+            
+            <div class="col-50">
+                
+                <img src="images/logo-img-contacte.jpg" class="img-contacte">
+
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2739.397836552102!2d29.40339967668009!3d46.638657254315305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9ad0005cbf68d%3A0x621f1f76e30f5cf6!2sBarberShop%20Rewers!5e0!3m2!1sro!2s!4v1704494308845!5m2!1sro!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h3>©️ Rewers 2019</h3>
+
+        <h3>©️ Serafim Lupan Căușeni 2023-2024</h3>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
