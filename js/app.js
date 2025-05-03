@@ -10,7 +10,7 @@ document.getElementById("logBtn").addEventListener("click", async () => {
     page: window.location.href
   };
 
-  fetch("URLUL_TĂU_DE_LA_DEPLOY", {
+  fetch("https://script.google.com/macros/s/AKfycbzguxX6eHvoPIF8WR93K_f1i6Fi9_mLbkY-Vn0ygdvhk-PTg5oyB0cPjFDFwZj2gjln/exec", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload)
