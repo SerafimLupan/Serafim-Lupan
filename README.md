@@ -7,14 +7,9 @@ This is my personal CV website, showcasing my experience, skills, and projects.
 - Mobile adaptation
 
 ## Technologies Used
-- HTML (57.0%)
-- CSS (35.0%)
-- JavaScript (8.0%)
+- HTML (60.4%)
+- CSS (32.2%)
+- JavaScript (7.4%)
 
 ## License
 This project is licensed under a custom Source Code License. Unauthorized use, duplication, or distribution of this software is strictly prohibited. See the LICENSE file for full details.
-
-
-HTML 57.0%
-CSS 35.0%
-JavaScript 8.0%
