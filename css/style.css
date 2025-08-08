@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap&family=Google+Sans+Code&display=swap');
 *{
     box-sizing: border-box;
 
@@ -422,6 +422,7 @@ nav li:last-child {
     color: #fff;
     font-size: 3.6rem;
     font-weight: 700;
+    font-family: "Google Sans Code";
     border-right: 0.15rem solid black;
     white-space: nowrap;
     animation: typing 6s steps(20, end), border-right 1s infinite;
@@ -1005,3 +1006,4 @@ footer{
         font-size: 72px;
     }
 }
+
