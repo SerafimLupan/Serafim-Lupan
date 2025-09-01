@@ -21,7 +21,7 @@ header{
     position: relative;
     left: 0;
     top: 0;
-    width: 1005;
+    width: 100%;
     height: 80px;
     z-index: 100;
 }
@@ -150,6 +150,7 @@ section h2, section h1 {
     letter-spacing: 1px;
     margin-bottom: 20px;
     color: #fff;
+    width: 100%;
 }
 
 .centered {
@@ -1046,6 +1047,7 @@ footer{
         font-size: 2.2rem;
     }
 }
+
 
 
 
