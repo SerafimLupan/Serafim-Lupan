@@ -996,6 +996,21 @@ footer{
 }
 
 @media (max-width: 600px) {
+    .animatedText {
+    position: relative;
+    top: 50%;
+    left: 0%;
+
+    display: inline-block;
+}
+
+.text {
+
+    color: #fff;
+    font-size: 26px;
+
+}
+    
     .p-card-title {
         font-size: 20px;
     }
@@ -1006,4 +1021,5 @@ footer{
         font-size: 72px;
     }
 }
+
 
