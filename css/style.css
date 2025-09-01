@@ -997,22 +997,37 @@ footer{
 
 @media (max-width: 600px) {
     .animatedText {
-    position: relative;
-    top: 50%;
-    left: 0%;
+        position: relative;
+        top: 50%;
+        left: 50%;
 
-    display: inline-block;
-}
+        display: inline-block;
+    }
 
-.text {
-
-    color: #fff;
-    font-size: 26px;
-
-}
+    .text {
+        font-size: 3.4rem;
+    }
     
     .p-card-title {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .text {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .text {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 2.8rem;
     }
 }
 
@@ -1020,6 +1035,17 @@ footer{
     span.logo{
         font-size: 72px;
     }
+
+    .text {
+        font-size: 2.4rem;
+    }
 }
+
+@media (max-width: 390px) {
+    .text {
+        font-size: 2.2rem;
+    }
+}
+
 
 
