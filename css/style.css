@@ -940,6 +940,14 @@ footer{
 }
 
 @media (max-width: 834px) {
+    .animatedText {
+        position: relative;
+        top: 50%;
+        left: 50%;
+
+        display: inline-block;
+    }
+    
     main {
         max-width: 850px;
     }
@@ -996,14 +1004,6 @@ footer{
 }
 
 @media (max-width: 600px) {
-    .animatedText {
-        position: relative;
-        top: 50%;
-        left: 50%;
-
-        display: inline-block;
-    }
-
     .text {
         font-size: 3.4rem;
     }
@@ -1046,6 +1046,7 @@ footer{
         font-size: 2.2rem;
     }
 }
+
 
 
 
