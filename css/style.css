@@ -872,27 +872,16 @@ footer{
 .socialIcons a {
     height: 52px;
     width: 52px;
+
+    transition: transform 0.5s ease;
 }
 
 /*-- Hover affect on social media icon -- */
 
-.socialIcons a:hover{
-    transform: translateY(-10px);
-    transition: 0.5s;
-}
 
-.socialIcons a {
-    transition: transform 0.5s ease; 
-}
 
 .socialIcons a:hover {
     transform: translateY(-10px);
-}
-
-
-.socialIcons a:hover i{
-    color: white;
-    transition: 0.5s;
 }
 
 .footerNav{
@@ -1105,6 +1094,7 @@ footer{
         font-size: 2.2rem;
     }
 }
+
 
 
 
