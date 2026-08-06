@@ -7,8 +7,8 @@ This is my personal CV website, showcasing my experience, skills, and projects.
 - Mobile adaptation
 
 ## Technologies Used
-- HTML (61.4%)
-- CSS (31.9%)
+- HTML (61.5%)
+- CSS (31.8%)
 - JavaScript (6.7%)
 
 ## License
